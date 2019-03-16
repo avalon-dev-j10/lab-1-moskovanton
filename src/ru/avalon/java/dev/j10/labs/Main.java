@@ -4,7 +4,7 @@ import ru.avalon.java.dev.j10.labs.models.Person;
 
 public class Main {
 
-    Main() {
+    public static void main(String args[]) {
 
         /*
          * FIXME(Студент): Измените определение метода так, чтобы он стал точкой входа в приложение.
