@@ -27,6 +27,10 @@ public class Passport {
     private LocalDate dateOfIssue;
     private String issuingAuthority;
     
+    /*  TODO (Проверка №1)
+        Добавить коментарии к полям и методам класса
+    */
+    
     /*
      * TODO(Студент): Закончить определение класса.
      *

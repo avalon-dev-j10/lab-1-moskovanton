@@ -23,6 +23,10 @@ public class Address   {
     private int hullNumber;
     private int apartmentNumber;
     private int index;
+    
+    /*  TODO (Проверка №1)
+        Добавить коментарии к полям и методам класса
+    */
 
     public String getCountry() {
         return country;

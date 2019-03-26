@@ -15,6 +15,11 @@ public class Person {
     
     public Passport passport;
     public Address address;
+    
+    /*  TODO (Проверка №1)
+        Добавить коментарии к полям и методам класса
+    */
+    
     /*
      * TODO(Студент): Создайте класс Address.
      *
@@ -63,6 +68,11 @@ public class Person {
         s += passport.getSurname() + ".";
         return s;
     }
+    
+    /*  TODO (Проверка №1)
+        Невыполняется условие, когда у человека есть только имя и фамилия!
+        Исправить!
+    */
 
     /**
      * Возвращает адрес, по которому проживает человек.
