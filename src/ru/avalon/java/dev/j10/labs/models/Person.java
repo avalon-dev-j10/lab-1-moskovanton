@@ -13,8 +13,8 @@ import ru.avalon.java.dev.j10.labs.commons.Address;
  */
 public class Person {
     
-    public Passport passport;
-    public Address address;
+    public Passport passport;   //Паспортные данные человека
+    public Address address;     //Прописка человека
     
     /*  TODO (Проверка №1)
         Добавить коментарии к полям и методам класса
@@ -51,7 +51,7 @@ public class Person {
      * есть только Имя и Фамилия, то возвращает их, разделённые
      * пробелом.
      *
-     * @return имя человека в виде строки.
+     * @return s - имя человека в виде строки.
      */
     public String getFullName() {
         /*
@@ -62,7 +62,7 @@ public class Person {
         if (!passport.getPatronymic().equals("")){
             s += passport.getPatronymic() + " ";
         }
-        else {
+        else if (!passport.getSecondName().equals("")){
             s += passport.getSecondName().charAt(0) + ". "; 
         }
         s += passport.getSurname() + ".";
@@ -80,7 +80,7 @@ public class Person {
      * Возвращаемый адрес соответствует месту постоянной
      * регистрации человека, согласно паспортным данным.
      *
-     * @return адрес регистрации в виде строки.
+     * @return s - адрес регистрации в виде строки.
      */
     public String getAddress() {
         /*
@@ -96,7 +96,7 @@ public class Person {
         s += "индекс " + address.getIndex() + ".";
         return s;
     }
-
+    //Конструктор
     public Person(Passport passport, Address address) {
         this.passport = passport;
         this.address = address;
