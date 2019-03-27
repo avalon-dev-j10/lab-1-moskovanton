@@ -59,13 +59,13 @@ public class Person {
          */
         
         String s = passport.getName() + " ";
+        if (!passport.getSecondName().equals("")){
+            s += passport.getSecondName().charAt(0) + ". "; 
+        }
+        s += passport.getSurname() + " ";
         if (!passport.getPatronymic().equals("")){
             s += passport.getPatronymic() + " ";
         }
-        else if (!passport.getSecondName().equals("")){
-            s += passport.getSecondName().charAt(0) + ". "; 
-        }
-        s += passport.getSurname() + ".";
         return s;
     }
     
